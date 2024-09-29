@@ -9,6 +9,8 @@ intents.guilds = True
 intents.guild_messages = True
 intents.message_content = True
 
+TOKEN = os.getenv("TOKEN2")
+
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 # Event to change nickname continuously
@@ -87,4 +89,4 @@ async def aa(ctx):
     await asyncio.gather(*delete_tasks)
     
 # Running the bot
-bot.run('MTI3MDQwNzkyMDUzMzg5NzI5OA.G8L3KD.s0SynARqsakpeaBzugqelRTlgWY0oZPrucyl_I')
+bot.run('TOKEN2')
