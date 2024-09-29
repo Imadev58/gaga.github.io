@@ -10,6 +10,8 @@ intents.members = True
 intents.message_content = True
 bot = commands.Bot(command_prefix='!', intents=intents)
 
+TOKEN = os.getenv("TOKEN1")
+
 cooldown_end = None
 # Initialize SQLite database
 conn = sqlite3.connect('bot.db')
@@ -301,4 +303,4 @@ async def add(ctx):
     )
     embed.set_footer(text="💫 Powered by 🌕 .gg/night")
     await ctx.send(embed=embed)
-bot.run('MTI4ODgyMTQ3MTI0NTg5MzYzMw.GJKBCV.oaxXN41Qt1Cg6R0xKAh_nNPkNCG5J9KoxXS91o')
+bot.run('TOKEN1')
